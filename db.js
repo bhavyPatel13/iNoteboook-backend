@@ -1,10 +1,10 @@
-const mongooes = require('mongoose');
-const mongoURI = 'mongodb://localhost:27017/inotebook'
+const mongoose = require('mongoose');
+const mongoURI = 'mongodb://localhost:27017/inotebook';
 
 const connectToMongo = async () => {
     try {
-        await mongooes.connect(mongoURI);
-        console.log('Connected to MongoDB successfully');
+        await mongoose.connect(mongoURI);
+        console.log('Connected to Mongooes successfully');
     } catch (error) {
         console.error('Failed to connect to MongoDB:', error);
     }
